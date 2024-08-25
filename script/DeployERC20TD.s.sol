@@ -1,6 +1,6 @@
 pragma solidity ^0.8.23;
 
-import "forge-std/Script.sol";
+import "../lib/forge-std/src/Script.sol";
 import "../src/ERC20TD.sol";
 
 contract DeployERC20TD is Script {
