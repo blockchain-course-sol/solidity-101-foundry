@@ -16,6 +16,7 @@ import "../src/Ex10.sol";
 import "../src/Ex11.sol";
 import "../src/Ex11b.sol";
 import "../src/Ex12.sol";
+import "../src/Ex13.sol";
 
 contract DeployEx is Script {
     ERC20TD public erc20td;
@@ -63,7 +64,8 @@ contract DeployEx is Script {
         // deployEx09();
         // deployEx10();
         // deployEx11();
-        deployEx12();
+        // deployEx12();
+        deployEx13();
     }
 
     function deployEx01() internal {
@@ -164,6 +166,12 @@ contract DeployEx is Script {
         Ex12 ex12 = new Ex12(ERC20TD(erc20tdAddress));
         deployedContracts["Ex12"] = address(ex12);
         deployedExercises.push("Ex12");
+    }
+
+    function deployEx13() internal {
+        Ex13 ex13 = new Ex13(ERC20TD(erc20tdAddress));
+        deployedContracts["Ex13"] = address(ex13);
+        deployedExercises.push("Ex13");
     }
 
     function setTeachers() internal {
