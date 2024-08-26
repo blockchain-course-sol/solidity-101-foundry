@@ -1,6 +1,7 @@
 pragma solidity ^0.8.19;
 
 import "./ExerciseTemplate.sol";
+// attention
 
 contract Ex09 is ExerciseTemplate {
     event ALazyStudent(address _lazyStudent);
@@ -11,14 +12,6 @@ contract Ex09 is ExerciseTemplate {
         require(_aValueToInput == 982738, "Incorrect value");
         emit ALazyStudent(msg.sender);
 
-        validateExercise(msg.sender);
-    }
-
-    function collectYourPointsAgain(uint _aValueToInput) public {
-        require(_aValueToInput == 972738, "Incorrect value");
-
-        // Validating exercise, getting points
-        creditStudent(2, msg.sender);
         validateExercise(msg.sender);
     }
 }
