@@ -7,6 +7,7 @@ libs = ["lib"]
 
 [rpc_endpoints]
 bsc_testnet = "${BSC_TESTNET_RPC_URL}"
+mainnet = "${RPC_MAINNET}"
 
 [etherscan]
 bsc_testnet = { key = "${BSCSCAN_API_KEY}" }

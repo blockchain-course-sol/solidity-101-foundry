@@ -10,6 +10,9 @@ import "../src/Ex04.sol";
 import "../src/Ex05.sol";
 import "../src/Ex06.sol";
 import "../src/Ex07.sol";
+import "../src/Ex08.sol";
+import "../src/Ex09.sol";
+import "../src/Ex10.sol";
 
 contract DeployEx is Script {
     ERC20TD public erc20td;
@@ -51,8 +54,11 @@ contract DeployEx is Script {
         // deployEx03();
         // deployEx04();
         // deployEx05();
-        deployEx06();
-        deployEx07();
+        // deployEx06();
+        // deployEx07();
+        deployEx08();
+        deployEx09();
+        deployEx10();
     }
 
     function deployEx01() internal {
@@ -111,6 +117,32 @@ contract DeployEx is Script {
                 1000;
         }
         ex07.setRandomValueStore(randomValuesEx07);
+    }
+
+    function deployEx08() internal {
+        Ex08 ex08 = new Ex08(ERC20TD(erc20tdAddress));
+        deployedContracts["Ex08"] = address(ex08);
+        deployedExercises.push("Ex08");
+    }
+
+    function deployEx09() internal {
+        Ex09 ex09 = new Ex09(ERC20TD(erc20tdAddress));
+        deployedContracts["Ex09"] = address(ex09);
+        deployedExercises.push("Ex09");
+    }
+
+    function deployEx10() internal {
+        Ex10 ex10 = new Ex10(ERC20TD(erc20tdAddress));
+        deployedContracts["Ex10"] = address(ex10);
+        deployedExercises.push("Ex10");
+
+        uint[40] memory randomValuesEx10;
+        for (uint i = 0; i < 40; i++) {
+            randomValuesEx10[i] =
+                uint(keccak256(abi.encodePacked(block.timestamp, i, "Ex10"))) %
+                1000;
+        }
+        ex10.setRandomValueStore(randomValuesEx10);
     }
 
     function setTeachers() internal {
