@@ -8,6 +8,8 @@ Welcome! This is an automated workshop that will on using Solidity Smart contrac
 
 ### Introduction
 
+- network : [BNB Smart chain Testnet](https://chainlist.org/chain/97)
+
 The workshop has two components:
 
 - An ERC20 token, ticker `ERC20TD`, that is used to keep track of points
@@ -24,6 +26,11 @@ Your objective is to gather as many ERC20TD points as possible. Please note :
 - Each exercice contract inherits from the [ExerciseTemplate](src/ExerciseTemplate.sol), which holds common functions to validate students and credit points
 - Each exercice is deployed on the Bnb testnet (chainID: 97). You can interact with them through [scan](https://testnet.bscscan.com/).
 - In order to receive points, you will have to call function that execute code in each smart contract, such that the function `creditStudent(n, msg.sender);` is triggered, and distributes n points.
+
+### Setting up
+
+- Fork this repository.
+- Create an env file with `cp .env.copy .env` and fill in the variables _*BSC_TESTNET_RPC_URL*_ and _*PRIVATE_KEY*_.
 
 ## Exercises addresses
 
