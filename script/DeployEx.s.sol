@@ -25,10 +25,10 @@ contract DeployEx is Script {
     string[] public deployedExercises;
 
     function run() external {
-        uint256 deployerPrivateKey = vm.envUint("PRIVATE_KEY");
+        uint256 deployerPrivateKey = vm.envUint("DEPLOYER");
         address deployerAddress = vm.addr(deployerPrivateKey);
 
-        erc20tdAddress = address(0x37f853ff379001E426cAa08d14bb467A5e3122F7);
+        erc20tdAddress = address(0x52ce45fb9603B2AA6af0E456ee38130B2c1A35F7);
 
         vm.startBroadcast(deployerPrivateKey);
 
@@ -53,18 +53,18 @@ contract DeployEx is Script {
     }
 
     function deployExercises() internal {
-        // deployEx01();
-        // deployEx02();
-        // deployEx03();
-        // deployEx04();
-        // deployEx05();
-        // deployEx06();
-        // deployEx07();
-        // deployEx08();
-        // deployEx09();
-        // deployEx10();
-        // deployEx11();
-        // deployEx12();
+        deployEx01();
+        deployEx02();
+        deployEx03();
+        deployEx04();
+        deployEx05();
+        deployEx06();
+        deployEx07();
+        deployEx08();
+        deployEx09();
+        deployEx10();
+        deployEx11();
+        deployEx12();
         deployEx13();
     }
 
