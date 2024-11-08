@@ -17,7 +17,7 @@ The workshop has two components:
 
 Your objective is to gather as many ERC20TD points as possible. Please note :
 
-- You will need testnet Bnb to do this workshop. Lookup "Bnb testnet faucet" on google.
+- You will need testnet Bnb to do this workshop. Lookup "Bnb testnet faucet" on google or section #testnet-faucet in [BNB Chain discord](https://discord.com/invite/bnbchain).
 - The 'transfer' function of ERC20TD has been disabled to encourage you to finish the TD with only one address
 
 ### Getting to work
