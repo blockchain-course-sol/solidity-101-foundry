@@ -18,7 +18,7 @@ contract Ex13 is ExerciseTemplate {
         uint256 decimals = TDERC20.decimals();
         require(
             finalBalance >= 6 ** decimals * 2,
-            "Solution should end with at least than 6 points"
+            "Solution should end with at least 6 points"
         );
 
         // Validating exercice
