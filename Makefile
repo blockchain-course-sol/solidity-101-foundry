@@ -1,7 +1,7 @@
 # Makefile for Forge Scripts
 
 # Variables
-RPC_URL ?= bsc_testnet
+RPC_URL ?= sepolia_testnet
 DEPLOY_SCRIPT = script/DeployEx.s.sol:DeployEx
 SOLVE_SCRIPT = script/Solution.s.sol:Solution
 
@@ -11,7 +11,7 @@ SOLVE_SCRIPT = script/Solution.s.sol:Solution
 # Deploy contracts
 deploy:
 	@echo "Deploying contracts..."
-	@forge script $(DEPLOY_SCRIPT) --rpc-url $(RPC_URL) --broadcast --verify -vvvv
+	@forge script $(DEPLOY_SCRIPT) --rpc-url $(RPC_URL) --broadcast --verify --retries 3 --delay 10 -vvvv
 
 # Solve exercises
 solve:

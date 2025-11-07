@@ -7,8 +7,8 @@ remappings = ["@src/=src/"]
 # See more config options https://github.com/foundry-rs/foundry/blob/master/crates/config/README.md#all-options
 
 [rpc_endpoints]
-bsc_testnet = "${BSC_TESTNET_RPC_URL}"
+sepolia_testnet = "${SEPOLIA_TESTNET_RPC_URL}"
 mainnet = "${RPC_MAINNET}"
 
 [etherscan]
-bsc_testnet = { key = "${BSCSCAN_API_KEY}" }
+sepolia_testnet = { key = "${ETHERSCAN_API_KEY}", chain = 11155111 }
