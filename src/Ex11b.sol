@@ -5,7 +5,8 @@ import "./ExerciseTemplate.sol";
 
 contract Ex11b is ExerciseTemplate {
     uint public secretValue;
-    bool private firstSudent;
+    uint public rewardedStudents;
+    uint public constant MAX_REWARDED_STUDENTS = 5;
 
     constructor(ERC20TD _TDERC20) ExerciseTemplate(_TDERC20) {
         secretValue = 31020;
@@ -16,11 +17,14 @@ contract Ex11b is ExerciseTemplate {
     }
 
     function fastestStudentReward() public {
-        require(firstSudent == false, "Function already called.");
+        require(
+            rewardedStudents < MAX_REWARDED_STUDENTS,
+            "MAX_REWARDED_STUDENTS cap reached."
+        );
 
-        firstSudent = true;
+        rewardedStudents++;
 
-        // Credit points to the student who discovered this function
+        // Credit points to the first students who discovered this function
         creditStudent(2, msg.sender);
         validateExercise(msg.sender);
     }
