@@ -50,6 +50,6 @@ Your objective is to gather as many ERC20TD points as possible. Please note :
 | Structures                                 | [Ex08](src/Ex08.sol)                    | [link](https://sepolia.etherscan.io/address/0x1669845805C0B9476481a87f33C619143E759fDb) |
 | Code history                               | [Ex09](src/Ex09.sol)                    | [link](https://sepolia.etherscan.io/address/0x776397E0e24E89F31d1E0bb4decee10B827a19a8) |
 | Past transactions                          | [Ex10](src/Ex10.sol)                    | [link](https://sepolia.etherscan.io/address/0xFB2324662dB17a72635b8892dfCAfF29bA1a7597) |
-| Composability                              | [Ex11](src/Ex11.sol)                    | [link](https://sepolia.etherscan.io/address/0x6C608cbb85c02A3CaE807660Fd78a24a6183C82F) |
+| Composability                              | [Ex11](src/Ex11.sol)                    | [link](https://sepolia.etherscan.io/address/0x3c0F46B7D8bf9892372888b81442C1Af88575fCA) |
 | Blockchain forensics                       | [Ex12](src/Ex12.sol)                    | [link](https://sepolia.etherscan.io/address/0xABCDbd811c89814D68A1E3307Bb20499bAddfE61) |
 | Deploy your contract to validate exercices | [Ex13](src/Ex13.sol)                    | [link](https://sepolia.etherscan.io/address/0xAf66d65cB049a2721B560007E09F253C59C6E3D5) |
